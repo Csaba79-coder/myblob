@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang= en xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new user</title>
+    <link rel="stylesheet" th:href="@{/floor-style.css}"/>
+</head>
+<body>
+<form th:action="@{'/showphotos/user/create' }" method="post">
+    <div>
+        <label for="name">Title of the photo</label><br/>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <br/>
+    <input type="submit" value="SAVE">
+</form>
+<button onclick="history.back()">Go Back</button>
+</body>
+</html>
